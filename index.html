@@ -421,7 +421,7 @@
         <a href="#process">Process</a>
         <a href="#structure">Structure</a>
         <a href="#usage">Usage</a>
-        <a href="#gallery">Gallery</a>
+        <!-- <a href="#gallery">Gallery</a>-->
         <a href="#video">Video</a>
       </div>
     </div>
@@ -718,16 +718,19 @@
         </p>
 
         <div class="video-wrapper">
-          <!-- TODO: 把 YOUTUBE_VIDEO_ID 替换成你的视频 ID -->
-          <iframe
-            src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID"
-            title="BloomTimer demo video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+          <video
+            controls
+            preload="metadata"
+            style="width: 100%; height: auto; border-radius: 12px;"
+          >
+            <source src="images/BloomTimer.mp4" type="video/mp4" />
+            <!-- 兼容性提示 -->
+            Your browser does not support the video tag.
+          </video>
         </div>
       </section>
     </div>
+
 
     <!-- Links & References -->
     <div class="container">
@@ -738,8 +741,8 @@
           Additional materials related to the project, such as research, inspiration, and CAD models.
         </p>
         <ul class="link-list">
-          <li><a href="#" target="_blank" rel="noopener">Reference / inspiration article</a></li>
-          <li><a href="#" target="_blank" rel="noopener">Fusion 360 / CAD model</a></li>
+          <li><a href="https://www.thingiverse.com/thing:875584" target="_blank" rel="noopener">Reference / inspiration article</a></li>
+          <!--<li><a href="#" target="_blank" rel="noopener">Fusion 360 / CAD model</a></li>-->
           <li><a href="#" target="_blank" rel="noopener">GitHub repository or code</a></li>
         </ul>
       </section>
